@@ -2,10 +2,7 @@
 -- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th5 22, 2022 lúc 12:42 PM
--- Phiên bản máy phục vụ: 10.4.19-MariaDB
--- Phiên bản PHP: 7.3.28
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -27,10 +24,10 @@ SET time_zone = "+00:00";
 -- Cấu trúc bảng cho bảng `db_category`
 --
 
-CREATE TABLE `db_category` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `link` varchar(255) CHARACTER SET utf8 NOT NULL,
+CREATE TABLE db_category (
+  id int(11) NOT NULL,
+  name varchar(255) CHARACTER SET utf8 NOT NULL,
+  link varchar(255) CHARACTER SET utf8 NOT NULL,
   `level` int(2) NOT NULL,
   `parentid` int(11) NOT NULL,
   `orders` varchar(5) CHARACTER SET utf8 DEFAULT NULL,
